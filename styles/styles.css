@@ -1,0 +1,224 @@
+@font-face {
+    font-family: "vazir";
+    src: url("../fonts/vazir-font/Vazir-Bold.eot") format("eot");
+    src: url("../fonts/vazir-font/Vazir-Bold.ttf"),
+        url("../fonts/vazir-font/Vazir-Bold.ttf"),
+        url("../fonts/vazir-font/Vazir-Bold.ttf");
+}
+
+body{
+    direction: rtl;
+    padding: 0;
+    margin: 0;
+    font-family: vazir;
+    overflow-x: hidden;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Style Header  */
+
+header{
+    width: 100%;
+    height: 170px;
+    display: flex;
+flex-direction: column;
+align-items: center;
+color: #fff;
+text-align: center;
+background: #ffbc02;
+}
+
+
+header h1{
+    color: #fff;
+    margin-top: 10px;
+}
+
+header p{
+    color: #fff;
+    opacity: .8;
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+
+
+
+/* Style Main */
+
+main{
+    width: 100%;
+    height:100%;
+    background: #e0e0e0;
+    display: flex;
+}
+
+main .container{
+    width: 70%;
+    height: 100%;
+    display: flex;
+flex-wrap: wrap;
+overflow: scroll;
+overflow-x: hidden;
+
+}
+
+
+/* Style Item */
+
+
+main .container .item{
+    width: 245px;
+    height: 200px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #000;
+    margin: 20px;
+    padding: 20px;
+}
+
+main .container .item .value table{
+    width: 100%;
+    height: 70%;
+}
+
+main .container .item p {
+    color: #c00;
+    
+}
+
+
+
+/* Menu */
+
+.menu {
+    width: 300px;
+    height: 100vh;
+    background: #fffb02;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+    align-items: center;
+    position: absolute;
+    left: -340px;
+    top: 0;
+    transition: left .3s ease-in-out;
+    z-index: 9999;
+}
+
+.menu img{
+    width: 100px;
+    margin-bottom: 50px;
+}
+
+.menu ul{
+    list-style-type: none;
+    width: 100%;
+    text-align: center;
+}
+
+.menu ul li{
+    margin-top: 20px;
+}
+
+.menu ul li a{
+    color: #000;
+    text-decoration: none;
+    display: block;
+    padding: 5px 30px;
+    cursor: pointer;
+    transition: all .3s;
+    border-radius: 5px;
+}
+
+.menu ul li a:hover{
+    background: #333333;
+    color: #fff;
+}
+
+/* SideBar */
+
+#sideBar{
+    width: 30%;
+    height: 99%;
+    background: #fff;
+    text-align: center;
+    overflow: scroll;
+    padding: 5px;
+    text-align: center;
+    overflow-x: hidden;
+
+}
+
+#sideBar h2{
+    position: fixed;
+    background: #fff;
+    width: 30%;
+    width: 30%;
+}
+
+.news img{
+    width: 100%;
+}
+
+.menu span{
+    color: #000;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translateX(48px);
+    background: #ffbc02;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.menu span svg{
+    font-size: 28px;
+    margin: 10px;
+}
+
+
+
+/* Active */
+
+.menu.active{
+    left: 0;
+}
+
+
+
+
+
+/* Style Footer */
+
+footer{
+    width: 100%;
+height: fit-content;
+background: #ffbc02;
+}
+footer .container {
+    width: 100%;
+    height: 100%;
+display: flex;
+justify-content: space-around;
+}
+
+footer .container ul{
+    margin: 30px;
+
+}
+
+footer .container ul li{
+    margin: 10px 30px;
+}
+
+footer .container ul li a{
+    color: #000;
+    text-decoration: none;
+font-size: 17px;
+
+}
